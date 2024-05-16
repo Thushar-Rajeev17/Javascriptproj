@@ -10,6 +10,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Background image path */
+            background-size: cover; /* Cover the entire body */
+            background-position: center; 
         }
         header {
             background-color: #333;
@@ -32,6 +35,12 @@
         }
         main {
             padding: 20px;
+            background-color: #fff; /* White background for main content */
+            border-radius: 5px; /* Rounded corners */
+            margin: 20px auto; /* Center align and provide some space from top and bottom */
+            max-width: 600px; /* Limit the width of the content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+            padding: 30px; /* Add some padding */
         }
         footer {
             background-color: #333;
@@ -39,13 +48,41 @@
             text-align: center;
             padding: 10px 0;
         }
+        form {
+            margin-top: 20px; /* Add space between the text and form */
+        }
+        label {
+            display: block; /* Display labels on a new line */
+            margin-bottom: 5px; /* Add space between labels */
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; 
+            padding: 8px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+        }
+        button[type="submit"] {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add padding */
+            cursor: pointer; /* Add cursor on hover */
+            border-radius: 5px; /* Add rounded corners */
+        }
+        button[type="submit"]:hover {
+            background-color: #555; /* Darker background color on hover */
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
